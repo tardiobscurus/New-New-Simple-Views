@@ -114,7 +114,6 @@
 
 body {
   background-color: #F7F6F5;
-  height: 300vh;
 }
 
 nav {
@@ -151,7 +150,7 @@ nav ul li a {
   font-weight: 400;
   text-align: center;
   text-decoration: none;
-  text-shadow: -1px 1px 0 black;
+  text-shadow: -1px 1px 0 #29274C;
   line-height: 100%;
   -webkit-transition: .5s ease;
   transition: .5s ease;
@@ -169,7 +168,7 @@ nav ul li .main-title {
   line-height: 100%;
   font-size: 150%;
   font-family: "Abril Fatface";
-  text-shadow: -2px 1px 0 black;
+  text-shadow: -2px 1px 0 #29274C;
   margin-bottom: 5px;
   font-weight: 500;
 }
@@ -215,7 +214,9 @@ nav ul li .main-title {
 
 .snippet-of-article .author {
   font-size: 1rem;
+  color: #271033;
   text-align: center;
+  font-family: "playfair display";
 }
 
 .snippet-of-article p {
@@ -225,9 +226,19 @@ nav ul li .main-title {
 }
 
 .main-content {
-  max-width: 85%;
+  max-width: 1250px;
   padding: 10px;
   margin: 25px auto 0 auto;
+}
+
+.main-content .title1 {
+  font-family: "Playfair Display";
+  color: #7E52A0;
+  border-bottom: 1px dotted #111;
+  text-shadow: -2px 0 0 #D295BF;
+  text-align: center;
+  margin: 20px;
+  font-size: 350%;
 }
 
 .main-content .section {
@@ -254,6 +265,17 @@ nav ul li .main-title {
 
 .main-content .section .review h1 {
   font-family: "playfair display";
+  color: #4A1942;
+}
+
+.main-content .section .review .about {
+  padding: 35px;
+}
+
+.main-content .section .review .about .author {
+  color: #271033;
+  font-family: "playfair display";
+  font-size: 1rem;
 }
 
 .main-content .section .review hr {
@@ -263,14 +285,7 @@ nav ul li .main-title {
 .main-content .section .review p {
   font-family: "montserrat";
   padding: 5px 0;
-}
-
-.main-content .section .review .about {
-  padding: 35px;
-}
-
-.main-content .section .review .about p {
-  font-size: 1rem;
+  color: black;
 }
 
 @media only screen and (max-width: 430px) {

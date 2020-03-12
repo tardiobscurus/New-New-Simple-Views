@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
-@import '_viewport';
+@import 'viewport';
 
 *, 
 *::before, 
@@ -19,7 +19,6 @@
 
 body {
     background-color: #F7F6F5; // #fcf9f9
-    height: 300vh;
 }
 
 nav {
@@ -48,7 +47,7 @@ nav {
                 font-weight: 400;
                 text-align: center;
                 text-decoration: none;
-                text-shadow: -1px 1px 0 black;
+                text-shadow: -1px 1px 0 #29274C;
                 line-height: 100%;
                 transition: .5s ease;
                 animation-fill-mode: backwards;
@@ -64,7 +63,7 @@ nav {
                 line-height: 100%;
                 font-size: 150%;
                 font-family: "Abril Fatface";
-                text-shadow: -2px 1px 0 black;
+                text-shadow: -2px 1px 0 #29274C;
                 margin-bottom: 5px;
                 // transition: .5s ease;
                 font-weight: 500;
@@ -112,7 +111,9 @@ nav {
 
     .author {
         font-size: 1rem;
+        color: #271033;
         text-align: center;
+        font-family: "playfair display";
     }
 
     p {
@@ -123,22 +124,28 @@ nav {
 }
 
 .main-content {
-    max-width: 85%;
+    max-width: 1250px;
     padding: 10px;
     margin: 25px auto 0 auto;
+
+    .title1 {
+        font-family: "Playfair Display";
+        color: #7E52A0;
+        border-bottom: 1px dotted #111;
+        text-shadow: -2px 0 0 #D295BF;
+        text-align: center;
+        margin: 20px;
+        font-size: 350%;
+    }
 
     .section {
         display: grid;
         align-items: center;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        // column-rule-style: solid;
-        // column-rule-color: #111;
         gap: 15px;
-        // grid-column: ;
 
         .review {
             background: white;
-            // padding: 25px 20px;
 
             img {
                 object-fit: cover;
@@ -148,7 +155,17 @@ nav {
 
             h1 {
                 font-family: "playfair display";
+                color: #4A1942;
+            }
 
+            .about {
+                padding: 35px;
+                
+                .author {
+                    color: #271033;
+                    font-family: "playfair display";
+                    font-size: 1rem;
+                }
             }
 
             hr {
@@ -158,15 +175,9 @@ nav {
             p {
                 font-family: "montserrat";
                 padding: 5px 0;
+                color: black;
             }
-
-            .about {
-                padding: 35px;
-
-                p {
-                    font-size: 1rem;
-                }
-            }
+            
         }
     }
 }

@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
-@import 'viewport';
-
 *, 
 *::before, 
 *::after {
@@ -182,6 +180,25 @@ nav {
     }
 }
 
+.main-article {
+
+    position: relative;
+    background: #F7F6F5;
+    max-width: 80rem;
+    margin: 0 auto;
+    margin-top: -8em;
+
+    .credentials {
+        padding: 35px;
+        font-size: x-large;
+    }
+
+    .main {
+        padding: 35px;
+        font-size: larger;
+    }
+}
+
 @media only screen and (max-width: 430px) {
     nav {
         display: none;
@@ -211,3 +228,5 @@ nav {
         margin-top: -80px;
     }
 } 
+
+@import 'viewport';
